@@ -1,7 +1,7 @@
 " Color scheme
 syntax enable
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme peaksea
 
 " For YouCompleteMe, only supports the official python distribution
 " IMPORTANT: when recompiling YCM after update, need to specify the
@@ -15,18 +15,6 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " For python
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
-" Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-   project_base_dir = os.environ['VIRTUAL_ENV']
-   sys.path.insert(0, project_base_dir)
-   activate_this = os.path.join(project_base_dir,
-   'bin/activate_this.py')
-   execfile(activate_this, dict(__file__=activate_this))
-EOF
 
 " For latex
 autocmd Filetype tex setlocal expandtab tabstop=4 shiftwidth=4
