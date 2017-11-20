@@ -149,9 +149,12 @@ let g:syntastic_python_checkers=['pyflakes']
 " Javascript
 let g:syntastic_javascript_checkers = ['jshint']
 
-" Go
+" Go 
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+
+" Tex
+let g:syntastic_tex_checkers = []
 
 " Custom CoffeeScript SyntasticCheck
 func! SyntasticCheckCoffeescript()
