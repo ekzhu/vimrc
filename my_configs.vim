@@ -1,7 +1,11 @@
 " Color scheme
 syntax enable
-set background=dark
-colorscheme peaksea
+set background=light
+colorscheme solarized
+" The terminal app must use a solarized color palette to make the
+" solarized color scheme work.
+
+"set number
 
 " For YouCompleteMe, only supports the official python distribution
 " IMPORTANT: when recompiling YCM after update, need to specify the
