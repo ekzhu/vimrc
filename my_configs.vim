@@ -25,3 +25,5 @@ autocmd Filetype tex setlocal expandtab tabstop=4 shiftwidth=4
 
 " For racket
 autocmd Filetype racket setlocal expandtab tabstop=2 shiftwidth=2
+
+set colorcolumn=80
