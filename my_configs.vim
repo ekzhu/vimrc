@@ -1,6 +1,6 @@
 " Color scheme
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 " The terminal app must use a solarized color palette to make the
 " solarized color scheme work.
