@@ -1,6 +1,6 @@
 " Color scheme
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 " The terminal app must use a solarized color palette to make the
 " solarized color scheme work.
@@ -33,5 +33,8 @@ autocmd Filetype tex setlocal expandtab tabstop=4 shiftwidth=4
 
 " For racket
 autocmd Filetype racket setlocal expandtab tabstop=2 shiftwidth=2
+
+" Rust
+let g:rustfmt_autosave = 1
 
 set colorcolumn=80
