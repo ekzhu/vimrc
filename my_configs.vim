@@ -17,6 +17,14 @@ let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
+" For Go
+
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+
+" For tex
+let g:syntastic_tex_checkers = []
+
 " For python
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 

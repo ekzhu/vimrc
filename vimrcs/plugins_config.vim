@@ -164,13 +164,6 @@ let g:ale_linters = {
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
-" Go 
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
-
-" Tex
-let g:syntastic_tex_checkers = []
-
 " Disabling highlighting
 let g:ale_set_highlights = 0
 
